@@ -42,3 +42,6 @@ nbdist/
 # End of https://www.toptal.com/developers/gitignore/api/java,netbeans
 /javaJDBC/IntroduccionJDBC/target/
 /javaJDBC/ManejoJDBC/target/
+/javaJDBC/co.com.jc.jdbc_ManejoJDBC_2.0/target/
+/javaJDBC/co.com.jc.jdbc_ManejoJDBC_jar_3.0/target/
+/javaJDBC/co.com.jc.jdbc_ManejoJDBC_poolConexiones/target/

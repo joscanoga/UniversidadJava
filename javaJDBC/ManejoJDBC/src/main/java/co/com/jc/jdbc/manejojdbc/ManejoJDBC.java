@@ -5,7 +5,9 @@
 package co.com.jc.jdbc.manejojdbc;
 
 import co.com.jc.jdbc.datos.PersonaDAO;
+import co.com.jc.jdbc.datos.UsuarioDAO;
 import co.com.jc.jdbc.domain.Persona;
+import co.com.jc.jdbc.domain.Usuario;
 import java.util.List;
 
 
@@ -41,6 +43,30 @@ public class ManejoJDBC {
         Persona personaDel=personas.get(1);
         
         registros=personaDao.Eliminar(personaDel);
+        System.out.println("registros = " + registros);
+        
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        
+        
+        List<Usuario> usuarios= usuarioDAO.selecionar();
+        for(Usuario usuario: usuarios){
+            System.out.println("persona = " + usuario);
+        }
+        
+        //insertando
+        Usuario usuarioNuevo=new Usuario("Camila","pedorra");
+        registros=usuarioDAO.insertar(usuarioNuevo);
+        System.out.println("registros = " + registros);
+        //actualizar
+        Usuario usuarioAct=usuarios.get(0);
+        usuarioAct.setPassword("gmail.com");
+        registros=personaDao.actualizarPersona(personaAct);
+        System.out.println("registros = " + registros);
+        
+        //Eliminar
+        Usuario usuarioDel=usuarios.get(1);
+        
+        registros=usuarioDAO.Eliminar(usuarioDel);
         System.out.println("registros = " + registros);
         
         
