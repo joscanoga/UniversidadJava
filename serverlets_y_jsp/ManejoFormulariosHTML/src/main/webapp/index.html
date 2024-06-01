@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio Formulario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="recursos/estilos.css"/>
+        <script type="text/javascript" src="recursos/funciones.js"></script> 
+    </head>
+    <body>
+        <form name="form1" action="/ManejoFormulariosHTML/home" method="POST" onsubmit="return validarForma(this)">
+            <input type="hidden" name="oculto" value="valorOculto"/>
+            <table border="1" width="500" id="enfasis-columna">
+                <caption>
+                    Formulario Registro de datos
+                </caption>
+                <tr>
+                    <td class="columna">
+                        usuario:(*)
+                    </td>
+                    <td>
+                        <input class="default" type="text" name="usuario" onfocus="this.select()" placeholder="ingrese el usuario"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        password: (*)
+                    </td>
+                    <td>
+                        <input class="default" type="password" name="password" onfocus="this.select()" placeholder="ingrese el password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        tegnologias de internet
+                    </td>
+                    <td>
+                        java <input type="checkbox" name="tecnologia" value="java"/>
+                        &nbsp;&nbsp;
+                        .net <input type="checkbox" name="tecnologia" value=".net"/>
+                        &nbsp;&nbsp;
+                        PHP <input type="checkbox" name="tecnologia" value="php"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Genero
+                    </td>
+                    <td>
+                        Masculino <input type="radio" name="genero" value="masculino"/>
+                        &nbsp;&nbsp;
+                        Femenino <input type="radio" name="genero" value="femenino"/>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Ocupacion
+                    </td>
+                    <td>
+                        <select name="ocupacion" class="default">
+                            <option value="">Seleccionar</option>
+                            <option value="profesor">profesor</option>
+                            <option value="ingeniero">ingeniero</option>
+                            <option value="doctor">doctor</option>
+                        </select>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Genero favorito
+                    </td>
+                    <td>
+                        <select class="default" name="musica">
+                            <option value="">Seleccionar</option>
+                            <option value="genero1">Genero 1</option>
+                            <option value="genero2">Genero 2</option>
+                            <option value="genero3">Genero 3</option>
+                        </select>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Comentarios
+                    </td>
+                    <td>
+                        <textarea name="comentarios" class="default" cols="30" rows="3" onfocus="this.select()"  ></textarea>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <input type="reset" value="limpiar" class="default"/> 
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar" class="default"/> 
+                        
+                    </td>
+                </tr>
+            </table>
+
+            
+        </form>
+    </body>
+    
+</html>
