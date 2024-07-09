@@ -67,3 +67,8 @@ nbdist/
 /serverlets_y_jsp/InclusionDinamicaJSP/target/
 /serverlets_y_jsp/ManejoJavabeans/target/
 /serverlets_y_jsp/ExpressionLenguage/target/
+/serverlets_y_jsp/ejemploJSTL/target/
+/serverlets_y_jsp/ejemplo1MVC/target/
+/serverlets_y_jsp/ejemplo2MVC_war_1.0/target/
+/criptografia/EncodeDecodeMD5/target/
+/criptografia/EncodeDecodeAES/target/
