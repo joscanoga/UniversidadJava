@@ -38,7 +38,10 @@ public class EncodeDecodeAES {
             encriptada = aes.encriptar(aEnccriptar);
             JOptionPane.showMessageDialog(null, encriptada);
             JOptionPane.showMessageDialog(null, aes.desencriptar(encriptada));
-        }else{
+        }else if(consemilla.equals("d")){
+            
+        }
+        else{
             JOptionPane.showMessageDialog(null, "opcion incorrecta");
         }
         
